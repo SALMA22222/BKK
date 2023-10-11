@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { HiMenuAlt3 } from 'react-icons/hi';
-import k from '../assets/k.png'
+import BkkW from '../assets/BkkW.png'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -14,9 +14,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className='absolute w-full flex justify-between p-4 items-center'>
+    <div className='absolute w-full flex justify-between p-9 items-center z-50'>
       <div>
-        <img src={k} alt=""  className='logo' />
+        <img src={BkkW} alt=""  className='logo ml-8' />
       </div>
       <HiMenuAlt3 onClick={handleNav} className='z-20 text-white cursor-pointer' size={25} />
       <div
